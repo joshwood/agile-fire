@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <script src="http://code.angularjs.org/1.2.7/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.7/angular-route.min.js"></script>
+	<script src="//cdn.firebase.com/v0/firebase.js"></script>
+	<script src="//cdn.firebase.com/libs/angularfire/0.5.0/angularfire.min.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers/UserController.js"></script>
+	<script src="scripts/controllers/SprintsController.js"></script>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		input{
+			display: block;
+			margin: 5px 5px 5px 0px;
+		}
+		.module{
+	
+		}
+		.box{
+			border: solid;
+			border-width: thin;
+			margin: 5px;
+			padding: 5px;
+			display: inline-table;
+		}
+		.boxTitle{
+			border-bottom: 1px black solid;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body ng-controller="MainController">
+
+<div ng-view> </div>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<div>
+	<h1>User Management</h1>
+
+	<div class="module">
+		<div class="box">
+			<div class="boxTitle">Create New User</div>
+			<input type="text" class="form-control" ng-model="user.userId" placeholder="User Id">
+			<input type="text" class="form-control" ng-model="user.firstName" placeholder="First Name">
+			<input type="text" class="form-control" ng-model="user.lastName" placeholder="Last Name">
+			<input type="button" class="btn-primary" ng-click="addUser()" value="save" style="float:right"/>
+			<input type="button" class="btn-success" ng-click="user = null" value="clear" style="float:right"/>
+		</div>
+		<div class="box">
+			<div class="boxTitle">Users</div>
+			<div ng-repeat="u in users">
+			<a href="" ng-click="removeUser(u)">x</a>
+			({{u.userId}}) - {{u.firstName}} {{u.lastName}}
+			</div>
+		</div>
+	</div>
+</div>

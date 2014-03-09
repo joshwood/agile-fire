@@ -1,0 +1,20 @@
+<div>
+	<h1>Sprints</h1>
+
+	<div class="module">
+		<div class="box">
+			<div class="boxTitle">Create New Sprint</div>
+			<input type="text" class="form-control" ng-model="sprint.sprintId" placeholder="Sprint Id">
+			<input type="text" class="form-control" ng-model="sprint.sprintDesc" placeholder="Sprint Desc">
+			<input type="button" class="btn-primary" ng-click="addSprint()" value="save" style="float:right"/>
+			<input type="button" class="btn-success" ng-click="sprint = null" value="clear" style="float:right"/>
+		</div>
+		<div class="box">
+			<div class="boxTitle">Sprints</div>
+			<div ng-repeat="u in sprints">
+			<a href="" ng-click="removeSprint(u)">x</a>
+			({{u.sprintId}}) - {{u.sprintDesc}}
+			</div>
+		</div>
+	</div>
+</div>
